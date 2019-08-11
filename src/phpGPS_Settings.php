@@ -7,15 +7,15 @@
   class phpGPS_Settings {
 
     //Map Info
-    public static $_defaultZoom = 3;
-    public static $_defaultCenterLat = "41.988308";
-    public static $_defaultCenterLong = "-99.483202";
+    public static $_defaultZoom = 6;
+    public static $_defaultCenterLat = "15.327726";
+    public static $_defaultCenterLong = "105.186648";
     public static $_defaultMapType = "roadmap";
     public static $_windowW = 500;
     public static $_windowH = 500;
     public static $_embedAddition = 20;
     
-    public static $_devKey = "DEV KEY";
+    public static $_devKey = "AIzaSyBammpQQ3sZpyE0l-p87WbsYchzairuGgU";
     
     //GPS Defaults
     public static $_defaultDeviceID = 1;
@@ -25,8 +25,8 @@
     
     //Database Info
     public static $_host = "localhost";  //DB HOSTNAME
-    public static $_username = "phpgps"; //DB USER
-    public static $_password = "phpgps"; //DB PASS
+    public static $_username = "root"; //DB USER
+    public static $_password = ""; //DB PASS
     public static $_dbname = "phpgps";   //DB NAME
     
     //Days to delay displaying markers

@@ -191,12 +191,19 @@
     }
     
     public static function showLogin() {
-      echo "Login:<br>";
+	  echo "<link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css\">
+  <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js\"></script>
+  <script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js\"></script>
+  <script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js\"></script>";
+  
+	  echo "<div class=\"container\">";
+	  echo "<div class=\"alert alert-success\"><strong>Login</strong></div>";
       echo "<form name=\"login\" method=\"post\" action=\"" . $_SERVER["PHP_SELF"] . "\">";
-      echo "Username: <input type=\"text\" name=\"user\"><br>";
-      echo "Password: <input type=\"password\" name=\"pass\"><br>";
-      echo "<input type=\"submit\" name=\"submit\" value=\"submit\">";
+      echo "Username: <input type=\"text\" name=\"user\" class=\"form-control\"><br>";
+      echo "Password: <input type=\"password\" name=\"pass\" class=\"form-control\"><br>";
+      echo "<input type=\"submit\" name=\"submit\" value=\"submit\" class=\"btn btn-success\">";
       echo "</form>";
+	  echo "</div>";
     }
     
     /**
